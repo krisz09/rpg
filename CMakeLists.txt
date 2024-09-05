@@ -14,7 +14,16 @@ FetchContent_MakeAvailable(SFML)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(RPG main.cpp)
+add_executable(RPG main.cpp
+        Player.cpp
+        Headers/Player.hpp
+        Enemy.cpp
+        Headers/Enemy.hpp
+        Logic.cpp
+        Headers/Logic.hpp
+        BulletManager.cpp
+        Headers/BulletManager.hpp)
 
 target_link_libraries(RPG sfml-graphics sfml-system sfml-window)
 
+include_directories(Headers)

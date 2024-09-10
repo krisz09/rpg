@@ -17,12 +17,18 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(RPG main.cpp
         Player.cpp
         Headers/Player.hpp
-        Enemy.cpp
-        Headers/Enemy.hpp
         Logic.cpp
         Headers/Logic.hpp
         BulletManager.cpp
-        Headers/BulletManager.hpp)
+        Headers/BulletManager.hpp
+        Headers/stdafx.hpp
+        Game.cpp
+        Headers/Game.hpp
+        Tile.cpp
+        Headers/Tile.hpp
+        TileMap.cpp
+        Headers/TileMap.hpp
+)
 
 target_link_libraries(RPG sfml-graphics sfml-system sfml-window)
 
